@@ -1,13 +1,14 @@
 {
-    "name": "hdy.brackets-shell",
-    "title": "Brackets Shell",
-    "description": "Shell access within Brackets",
-    "homepage": "https://github.com/johnhidey/hdy.brackets-shell",
-    "version": "0.0.4",
-    "author": "John Hidey (https://github.com/johnhidey/hdy.brackets-shell)",
+    "name": "krz.brackets-serial",
+    "title": "Brackets Srial Monitor",
+    "description": "Adds a serial monitor to the brackets shell",
+    "homepage": "https://github.com/krizroring/krz.brackets-serial",
+    "version": "0.0.1",
+    "author": "Christian Roring (https://github.com/krizroring/krz.brackets-serial)",
     "license": "MIT",
     "keywords": [
-        "command",
+        "serial",
+        "serial monitor",
         "shell"
     ],
     "engines": {

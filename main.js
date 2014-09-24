@@ -1,9 +1,4 @@
-//         _       __          __    _     __
-//        (_)___  / /_  ____  / /_  (_)___/ /__  __  __
-//       / / __ \/ __ \/ __ \/ __ \/ / __  / _ \/ / / /
-//      / / /_/ / / / / / / / / / / / /_/ /  __/ /_/ /
-//   __/ /\____/_/ /_/_/ /_/_/ /_/_/\__,_/\___/\__, /
-//  /___/                                     /____/
+                                   /____/
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true,
          indent: 4, maxerr: 50 */
@@ -15,16 +10,13 @@ define(function (require, exports, module) {
     var AppInit         = brackets.getModule("utils/AppInit"),
         ExtensionUtils  = brackets.getModule("utils/ExtensionUtils"),
         $icon           = $("<a class='hdy-shell-icon' href='#'> </a>")
-                            .attr("title", "Shell")
+                            .attr("title", "Serial Monitor")
                             .appendTo($("#main-toolbar .buttons"));
 
     AppInit.appReady(function () {
-
-        ExtensionUtils.loadStyleSheet(module, "styles/shellPanel.css");
-        var commandShell = require("shellPanel");
+        ExtensionUtils.loadStyleSheet(module, "styles/serialPanel.css");
+        var commandShell = require("serialPanel");
         commandShell.hide();
         $icon.on("click", commandShell.toggle);
-
     });
-
 });
